@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.ocpp.websocket.OcppWebSocketHandlerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-05T14:09:49" hostname="SADHANAPOL" time="1.714">
+<testsuite name="com.example.ocpp.websocket.OcppWebSocketHandlerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-06T11:23:00" hostname="SADHANAPOL" time="0.294">
   <properties/>
-  <testcase name="testHandleTextMessage()" classname="com.example.ocpp.websocket.OcppWebSocketHandlerTest" time="1.714"/>
-  <system-out><![CDATA[19:39:50.727 [Test worker] INFO com.example.ocpp.websocket.OcppWebSocketHandler -- Received message: {"test":"payload"}
+  <testcase name="testHandleTextMessage()" classname="com.example.ocpp.websocket.OcppWebSocketHandlerTest" time="0.294"/>
+  <system-out><![CDATA[2025-11-06T16:53:01.095+05:30  INFO 16828 --- [    Test worker] c.e.ocpp.websocket.OcppWebSocketHandler  : Received message: {"test":"payload"}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
