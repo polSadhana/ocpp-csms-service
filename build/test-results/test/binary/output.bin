@@ -1,0 +1,1 @@
+y19:39:50.727 [Test worker] INFO com.example.ocpp.websocket.OcppWebSocketHandler -- Received message: {"test":"payload"}
