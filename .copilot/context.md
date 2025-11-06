@@ -46,7 +46,7 @@ Primary goal: manage sessions, transactions, and charger state following the OCP
 
 ## Coding Conventions
 
-* Package base: `com.example.ocpp`
+* Package base: `com.evoke.ocpp`
 * Use `@Service` for business logic and `@Controller` for WebSocket/REST layers.
 * Constructor-based dependency injection.
 * Use SLF4J for logging.
@@ -56,23 +56,14 @@ Primary goal: manage sessions, transactions, and charger state following the OCP
 
 ---
 
-## Key Design Notes
+## SonarQube Scan Command
 
-* Maintain a mapping of connected chargers via in-memory cache (use Guava or Redis).
-* Ensure non-blocking message handling with async processing.
-* Validate all inbound OCPP messages before persistence.
-* Use DTOs for API request/response models.
-* Publish internal events (e.g., transaction started/stopped) via Kafka if integrated.
-* Future support: Diagnostics, Firmware Updates, and OCPI integration.
+To run a SonarQube scan using Docker and the remote server:
 
----
+```sh
+docker run --rm -e SONAR_HOST_URL="http://3.17.106.40" -e SONAR_TOKEN="<your-token>" -v "${PWD}:/usr/src" -w /usr/src sonarsource/sonar-scanner-cli
+```
 
-## Example Commands for Copilot Agent
-
-* “Add BootNotification message handler implementing OCPP 2.1 spec.”
-* “Create WebSocket controller for `/ocpp/csms` endpoint.”
-* “Implement PostgreSQL repository for storing charger sessions.”
-* “Add TLS configuration for secure WebSocket communication.”
-* “Write integration test using Testcontainers for OCPP handler.”
+Replace `<your-token>` with your actual SonarQube token. Run this command from your project root directory.
 
 ---
