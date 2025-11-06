@@ -1,6 +1,6 @@
 package com.evoke.ocpp.repository;
 
-import com.example.ocpp.entity.Transaction;
+import com.evoke.ocpp.entity.Transaction;
 import com.evoke.ocpp.entity.Session;
 import com.evoke.ocpp.entity.Charger;
 import org.junit.jupiter.api.Test;

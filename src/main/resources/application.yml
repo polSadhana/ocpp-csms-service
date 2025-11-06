@@ -21,7 +21,7 @@ logging:
   level:
     root: INFO
     org.springframework.web: DEBUG
-    com.example.ocpp: DEBUG
+    com.evoke.ocpp: DEBUG
 
 management:
   endpoints:

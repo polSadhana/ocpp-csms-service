@@ -13,7 +13,7 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 public class OcppWebSocketConfig implements WebSocketConfigurer {
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-        registry.addHandler(new com.example.ocpp.websocket.OcppWebSocketHandler(), "/ocpp/csms")
+        registry.addHandler(new com.evoke.ocpp.websocket.OcppWebSocketHandler(), "/ocpp/csms")
                 .setAllowedOrigins("*");
     }
 }
